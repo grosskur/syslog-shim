@@ -14,6 +14,16 @@ have [syslog-ng](http://www.balabit.com/network-security/syslog-ng) or
 sometimes you want to keep things simple, and this shim lets you
 pretend that haproxy is logging to stderr.
 
+```Shell
+$ syslog-shim haproxy -f /etc/haproxy.cfg
+syslog-shim: listening on 127.0.0.1:1514
+syslog-shim: running: haproxy -f /etc/haproxy.cfg
+syslog-shim: local0: haproxy[4]: notice: Proxy http started.
+syslog-shim: local0: haproxy[4]: notice: Proxy foo started.
+syslog-shim: local0: haproxy[4]: notice: Proxy bar started.
+[...]
+```
+
 ## Credits
 
 Thanks for [Michał Derkacz](https://github.com/ziutek) for the awesome
