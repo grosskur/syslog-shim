@@ -17,5 +17,5 @@ pretend that haproxy is logging to stderr.
 ## Credits
 
 Thanks for [Michał Derkacz](https://github.com/ziutek) for the awesome
-[syslog](https://github.com/ziutek/syslog server) Go package which
+[syslog server](https://github.com/ziutek/syslog) Go package which
 does all the heavy lifting.
